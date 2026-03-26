@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.header {
+  border-bottom: 1px solid #333;
+  padding: 20px 0;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+}
+
+.search {
+  padding: 8px 12px;
+  background: #222;
+  border: none;
+  color: white;
+}
+
+.filter-btn {
+  padding: 8px 16px;
+  background: #333;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+main {
+  padding: 40px 0;
+}
+
+.gallery {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+/* tablet */
+@media (min-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* small desktop */
+@media (min-width: 1024px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+/* large desktop */
+@media (min-width: 1366px) {
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.card {
+  background: #1a1a1a;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+.card__info {
+  padding: 15px;
+}
+
+.card__info h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.card__info p {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.filters {
+  margin-top: 30px;
+  display: grid;
+  gap: 20px;
+}
+
+.filter {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.filter select,
+.filter input {
+  padding: 8px;
+  background: #222;
+  border: none;
+  color: white;
+}
+
+.years-inputs {
+  display: flex;
+  gap: 10px;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.show-btn {
+  padding: 10px 20px;
+  background: #555;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.clear-btn {
+  padding: 10px 20px;
+  background: #222;
+  border: 1px solid #555;
+  color: white;
+  cursor: pointer;
+}
+
+.pagination {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.pagination button {
+  padding: 6px 10px;
+  background: #222;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.pagination .active {
+  background: #555;
+}
+
+/*# sourceMappingURL=styles.css.map */

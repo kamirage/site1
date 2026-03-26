@@ -1,0 +1,28 @@
+.main-content {
+  padding: 48px 0;
+}
+
+.artworks-grid {
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+@media (min-width: 640px) {
+  .artworks-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .artworks-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1400px) {
+  .artworks-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

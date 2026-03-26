@@ -1,0 +1,92 @@
+.filter-panel {
+  margin-top: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 24px;
+  background: #161616;
+  border-radius: 16px;
+  border: 1px solid #252525;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+  min-width: 140px;
+}
+
+.filter-label {
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #8a8a8a;
+}
+
+.filter-select,
+.filter-input {
+  padding: 10px 12px;
+  background: #1e1e1e;
+  border: 1px solid #2a2a2a;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+}
+
+.filter-select:focus,
+.filter-input:focus {
+  outline: none;
+  border-color: #555;
+}
+
+.years-range {
+  display: flex;
+  gap: 12px;
+}
+
+.years-range .filter-input {
+  width: 100%;
+}
+
+.filter-actions {
+  display: flex;
+  gap: 12px;
+  align-items: flex-end;
+}
+
+.btn-primary {
+  padding: 10px 24px;
+  background: #3a3a3a;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.813rem;
+  transition: background 0.2s ease;
+}
+
+.btn-primary:hover {
+  background: #4a4a4a;
+}
+
+.btn-secondary {
+  padding: 10px 24px;
+  background: transparent;
+  border: 1px solid #3a3a3a;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.813rem;
+  transition: all 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background: #252525;
+  border-color: #555;
+}

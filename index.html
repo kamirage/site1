@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Art Gallery</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="app-container header-inner">
+      <div class="brand">
+        ArtSphere
+      </div>
+      <div class="action-bar">
+        <input type="text" class="search-field" placeholder="Search by title...">
+        <button class="filter-toggle">Filters</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="app-container">
+
+      <div class="filter-panel">
+        <div class="filter-group">
+          <span class="filter-label">Artist</span>
+          <select class="filter-select">
+            <option>All artists</option>
+            <option>Van Gogh</option>
+            <option>Rembrandt</option>
+            <option>Picasso</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <span class="filter-label">Location</span>
+          <select class="filter-select">
+            <option>All locations</option>
+            <option>Paris</option>
+            <option>London</option>
+            <option>Rome</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <span class="filter-label">Year range</span>
+          <div class="years-range">
+            <input type="number" class="filter-input" placeholder="From">
+            <input type="number" class="filter-input" placeholder="To">
+          </div>
+        </div>
+
+        <div class="filter-actions">
+          <button class="btn-primary">Apply</button>
+          <button class="btn-secondary">Reset</button>
+        </div>
+      </div>
+
+      <div class="artworks-grid">
+
+        <div class="art-card">
+          <img class="art-card__media" src="images/1.jpg" alt="Cascate di Tivoli">
+          <div class="art-card__details">
+            <h3 class="art-card__title">Cascate di Tivoli</h3>
+            <p class="art-card__year">1781</p>
+          </div>
+        </div>
+
+        <div class="art-card">
+          <img class="art-card__media" src="images/2.jpg" alt="Portrait of Vincent van Gogh">
+          <div class="art-card__details">
+            <h3 class="art-card__title">Portrait of Vincent van Gogh</h3>
+            <p class="art-card__year">1886</p>
+          </div>
+        </div>
+
+        <div class="art-card">
+          <img class="art-card__media" src="images/3.jpg" alt="The Happy Violinist">
+          <div class="art-card__details">
+            <h3 class="art-card__title">The Happy Violinist</h3>
+            <p class="art-card__year">1624</p>
+          </div>
+        </div>
+
+        <div class="art-card">
+          <img class="art-card__media" src="images/4.jpg" alt="The Arcadian">
+          <div class="art-card__details">
+            <h3 class="art-card__title">The Arcadian</h3>
+            <p class="art-card__year">1834</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pagination-nav">
+        <button class="nav-arrow">&lt;</button>
+        <button class="page-btn active">1</button>
+        <button class="page-btn">2</button>
+        <button class="page-btn">3</button>
+        <span class="pagination-dots">...</span>
+        <button class="page-btn">9</button>
+        <button class="nav-arrow">&gt;</button>
+      </div>
+
+    </div>
+  </main>
+
+</body>
+
+</html>
